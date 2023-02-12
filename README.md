@@ -6,3 +6,5 @@
 Updated HTML Documents for Blind Playthrough Podcast website. Home page and episode library page.
 
 Updated with Basic_HTML_1 folder with code utilizing img, bold, italized, and underline tags.
+
+Updated with Basic_HTML_and_CSS folder. Contains code utilizing ordered and unordered list elements with style types, HTML entities and text shadowing.
