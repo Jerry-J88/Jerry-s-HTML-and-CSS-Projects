@@ -1,0 +1,18 @@
+ol {
+	list-style-type: lower-roman;
+}
+
+ul {
+	list-style-type: square;
+}	
+
+li {
+	color: midnightblue;
+	background-color: mistyrose;
+	font-size: large;
+	text-align: left;
+	text-shadow: 2px 2px 5px mediumorchid;
+	}
+h1, h2 {
+	text-shadow: 2px 2px 5px red;
+}
