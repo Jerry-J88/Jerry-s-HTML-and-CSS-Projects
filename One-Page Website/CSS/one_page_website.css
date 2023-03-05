@@ -1,0 +1,71 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 80%;
+    background-color: antiquewhite;
+    color: midnightblue;
+}
+
+/* Home Section */
+
+.menu {
+    background: url("../images/home_background.png");
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home-text {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    color: darkred;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+}
+nav li {
+    margin-right: 15px;
+    margin-left: 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+/* Past trips section */
+
+
+#past_trips {
+    text-align: center;
+    background-color: bisque;
+    font-size: 30px;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 8px;
+    
+}
+
+.photo {
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 8px;
+    
+}
+
+.video {
+    margin-top: 50px;
+    
+}
+
+/*Newsletter Section */
+
+#newsletter {
+     text-align: center;
+    background-color: bisque;
+    font-size: 30px;
+     margin: 10px;
+    border: 2px solid red;
+    border-radius: 8px;
+}
