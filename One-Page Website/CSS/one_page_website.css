@@ -61,11 +61,18 @@ nav li {
 
 /*Newsletter Section */
 
-#newsletter {
-     text-align: center;
+#newsletter input {
+
+    text-align: center;
     background-color: bisque;
-    font-size: 30px;
-     margin: 10px;
+    font-size: 20px;
+    margin: 15px;
+    width: 200px;
     border: 2px solid red;
     border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    margin: 0;
 }
