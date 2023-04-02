@@ -4,6 +4,7 @@
 		<title>Jerold's Travels</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
 	</head>
 	<!--Home section-->
 	<body>
@@ -26,12 +27,86 @@
 		<section id="past_trips">
 			<h3>Past Trips</h3>
 			<h4>Los Cabos</h4>
-			<img class="photo" src="./images/Los Cabos/Los_cabos_1.png">
-			<img  class="photo" src="./images/Los Cabos/Los_cabos_2.png">
-			<img class="photo" src="./images/Los Cabos/Los_cabos_3.png">
-			<img class="photo" src="./images/Los Cabos/Los_cabos_4.png">
-			<img class="photo" src="./images/Los Cabos/Los_cabos_5.png">
+			<div class="row"> <!--opens the light box-->
+				<div class="column">
+					<img class="photo" onclick="openModal();currentSlide(1)" src="./images/Los Cabos/Los_cabos_1.png">
+				</div>	
+				<div class="column">
+					<img  class="photo" onclick="openModal();currentSlide(1)" src="./images/Los Cabos/Los_cabos_2.png">
+				</div>
+				<div class="column">
+					<img class="photo" onclick="openModal();currentSlide(1)" src="./images/Los Cabos/Los_cabos_3.png">
+				</div>
+				<div class="column">
+					<img class="photo" onclick="openModal();currentSlide(1)" src="./images/Los Cabos/Los_cabos_4.png">
+				</div>
+				<div class="column">
+					<img class="photo" onclick="openModal();currentSlide(1)" src="./images/Los Cabos/Los_cabos_5.png">
+				</div>
 			<iframe class="video"width="893" height="502" src="https://www.youtube.com/embed/v66xtdsgGQA" title="Endless Vacation Video Tour: A Los Cabos Adventure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+
+			<!--The modal/lightbox-->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+			  
+				  <div class="mySlides">
+					<div class="numbertext">1 / 5</div>
+					<img src="Images/Los Cabos/Los_cabos_wide_1.png" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">2 / 5</div>
+					<img src="Images/Los Cabos/Los_cabos_wide_2.png" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">3 / 5</div>
+					<img src="Images/Los Cabos/Los_cabos_wide_3.png" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">4 / 5</div>
+					<img src="Images/Los Cabos/Los_cabos_wide_4.png" style="width:100%">
+				  </div>
+
+				  <div class="mySlides">
+					<div class="numbertext">5 / 5</div>
+					<img src="Images/Los Cabos/Los_cabos_wide_5.png" style="width:100%">
+				  </div>
+
+				   <!-- Next/previous controls -->
+    			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				  </div>
+			  
+				  <!-- Thumbnail image controls -->
+				  <div class="column">
+					<img class="demo" src="Images/Los Cabos/Los_cabos_1.png" onclick="currentSlide(1)" alt="Resort">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="Images/Los Cabos/Los_cabos_2.png" onclick="currentSlide(2)" alt="Sushi">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="Images/Los Cabos/Los_cabos_3.png" onclick="currentSlide(3)" alt="Proud Chef">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="Images/Los Cabos/Los_cabos_4.png" onclick="currentSlide(4)" alt="Beach Day">
+				  </div>
+
+				  <div class="column">
+					<img class="demo" src="Images/Los Cabos/Los_cabos_5.png" onclick="currentSlide(5)" alt="Dinner and Drinks">
+				  </div>
+				</div>
+			  </div>
 		</section>
 		
 	
