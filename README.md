@@ -8,3 +8,12 @@ Updated HTML Documents for Blind Playthrough Podcast website. Home page and epis
 Updated with Basic_HTML_1 folder with code utilizing img, bold, italized, and underline tags.
 
 Updated with Basic_HTML_and_CSS folder. Contains code utilizing ordered and unordered list elements with style types, HTML entities and text shadowing.
+
+BBP Project:
+
+Website for The Blind Playthrough Podcast. Utilizes HTML and CSS to creat a website with some dynamic elements.
+
+
+Bootstrap Project: Academy Cinema,
+
+Website for Academy Cinema. Website was made utilizes bootstrap 4 to quickly create a website. Including navbars, table, contact form and jumbotron.
