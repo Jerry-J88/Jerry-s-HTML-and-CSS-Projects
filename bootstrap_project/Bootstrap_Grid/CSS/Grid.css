@@ -1,0 +1,81 @@
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:35% ;
+    filter: sepia(50%);
+    
+    
+}
+
+.photo img {
+    border-radius: 3em 1em 3em 1em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5em;
+    font-weight: bold;
+}
+
+.table-container {
+    background-color: antiquewhite;
+}
+
+.table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:25%   
+}
+
+table, th, td {
+    margin-top: 1em;
+    border: 1px solid black;
+    
+}
+
+th, td {
+    text-align: center;
+    padding: 15px;
+}
+
+th {
+    background-color: lightslategray;
+}
+
+.image-text {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: lightskyblue;
+    text-shadow: 2px 2px 2px  black;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.image-text:hover {
+    opacity: 1;   
+}
+
+.video-loop {
+    position: relative;
+    text-align: center;
+    color:whitesmoke;
+    text-shadow: 2px 2px 4px black;
+}
+
+.bottom-center {
+    position: absolute;
+    top:80%;
+    left: 45%;
+
+}
+
+@media screen and (min-width: 600px) {
+    p {
+        color: blue;
+    }
+}
