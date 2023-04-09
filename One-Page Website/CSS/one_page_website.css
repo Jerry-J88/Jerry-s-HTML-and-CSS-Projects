@@ -5,6 +5,16 @@ html {
     color: midnightblue;
 }
 
+body {
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+
 /* Home Section */
 
 .menu {

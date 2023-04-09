@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/port_webpage.css">
+    </head>
+    <!--Body-->
+    <body class="backgroound">
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <!--new section added-->
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <!--onclick and dblclick added to open and close contact form-->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+        <!--breaks inserted to add space between Navbar and first heading-->
+        <br>
+        <br>
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Working_Video">
+                <source src="./images/portfolio_video_1.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                " Your browser does not support HTML5 video. "
+            </video>
+        </div>
+        <!--Video Text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Jerry Jensen's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>
+                       
+                        I saw myself as a person that wanted to build their own house
+                        and was aware that I needed to have all the skills and know-how
+                        of house building.
+                        <br>
+                        I knew I needed to learn everything from design to bricklaying
+                        to paiting to electrics if I wanted to have the house I envisioned.
+                        <br>
+                        I am very much a hands-on person and I learn from doing.
+                         Hopefully I can now pass on some of what I learned to you.
+                        
+                    </q>
+                    <br>
+                    -Teddy Hayes
+                    <br>
+                    <br>
+                     My name is Jerry Jensen. Welcome to my portfolio website. On it I will 
+                    tell you about myself and my experience.
+                    <br>
+                    <br>
+                     Thank you for visiting and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!--Slideshow section added-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--Slide 1 of 3-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/slideShow_2.jpg" alt="Picture of Jerry Jensen">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!--Slide 2 of 3-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/html-css-js-logos.png" alt="HTML, CSS and Javascript Logos">
+                        <div class="text">I am a front-end web developer,<br> trained in:<br>HTML, CSS and JavaScript.</div>
+                    </div>
+                    <!--Slide 3 of 3-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/slideShow_1.jpg" alt="Contact me now">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                     <!-- Previous and next buttons -->
+                     <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                     <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>     
+                    <!--Slideshow dots-->
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--About Section-->
+        <div class="Row" id="About">
+            <!--left column-->
+            <div class="Column_2">
+                <img src="./images/portfolio_1.jpg" alt="Screen with code">
+            </div>
+            <!--right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    Hi, I'm Jerry. I got into tech after working as a stage manager in theatre for 10 years.
+                    I enjoy reading, playing video games, spending time with my cat and playing disc golf.
+                    <br>
+                    <br>
+                    I am a graduate of 
+                    <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>'s
+                     Front End Web Developer Boot Camp, and trained and experienced in the following web
+                     and programming languages: HTML, CSS and Javascript.
+                     <br>
+                     <br>
+                     I am a front end developer and would love to work with you on your project.
+                     <a href="#Contact">Contact</a>
+                      me below!
+                </p>
+            </div>
+        </div>
+        <!--GitHub Section-->
+        <div class="Row" id="GitHub">
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p class="center">
+                    Visit my GitHub profile to view my projects:
+                    <br>
+                </p>
+                <p class="center">
+                    <a href="https://github.com/Jerry-J88" target="_blank">Jerry GitHub</a>
+                </p>
+            </div>
+        
+            <!--Right Column-->
+            <div class="Column_2">
+                <a href="https://github.com/Jerry-J88" target="_blank">
+                <img src="./images/GitHub.png" alt="GitHub Logo">
+                </a>
+            </div>
+        </div>
+        <!--Contact form-->
+        <div  id="Contact">
+                <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+                <div class="form-popup" id="myForm">
+                    <h1>Contact</h1>
+                    <form action="https://formspree.io/f/mpzelzwz" method="post" class="form-container">
+                        <label for="name"><b>Name:</b></label>
+                            <input type="text" placeholder="Please enter your name here">
+                        <label for="phone"><b>Phone</b></label>
+                            <input type="text" placeholder="Type your phone number here" name="phone">
+                        <label for="email"><b>Email:</b></label>
+                            <input type="text"   placeholder="Please enter your email here">
+                        <label for="message"><b>Message:</b></label>
+                            <input type="text"   placeholder="Please write your message here">
+                        
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    </form>
+                </div>
+        </div>
+        <!--Footer-->
+        <footer>
+            <p></p>
+            <p class="center">
+                @ Prosper Consulting Inc.,
+                <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>
+            </p>
+            <br>
+            <p></p>
+        </footer>
+        <script src="js/portfolio.js"></script>
+    </body>
+
+</html>
